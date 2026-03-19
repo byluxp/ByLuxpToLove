@@ -1,0 +1,11 @@
+.titulo-principal {
+  background-color:greenyellow;
+  color: white; /* opcional, pra melhorar a leitura */
+  padding: 10px; /* opcional, deixa mais bonito */
+  text-align: center; /* opcional, centraliza o texto */
+}
+
+.resumo {
+  font-style: italic; /* deixa o texto em itálico, para parecer mais poético */
+  margin-left: 20px; /* opcional, para dar um recuo e destacar o poema */
+}
