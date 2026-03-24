@@ -1,3 +1,12 @@
+body {
+  background-image: url("../img/BA859564-EFF9-44A3-8951-67437BD29558.jpg"); /* ajuste o caminho */
+  background-size: cover;        /* faz cobrir toda a tela */
+  background-position: center;   /* centraliza */
+  background-repeat: no-repeat;  /* não repete */
+  height: 100vh;                 /* ocupa a tela inteira */
+}
+
+
 .titulo-principal {
   background-color:greenyellow;
   color: white; /* opcional, pra melhorar a leitura */
@@ -5,7 +14,33 @@
   text-align: center; /* opcional, centraliza o texto */
 }
 
+.content {
+  padding: 20px; /* opcional, para dar um espaço interno */
+  margin-top: 10px; /* opcional, para dar um espaço entre o título e o conteúdo */
+}
+
 .resumo {
   font-style: italic; /* deixa o texto em itálico, para parecer mais poético */
   margin-left: 20px; /* opcional, para dar um recuo e destacar o poema */
+}
+
+.container {
+  position: relative; /* faz a imagem se ajustar a tela */
+  width: 100%;
+}
+
+.container img {
+  width: 100%;
+  display: block;
+}
+
+.container h1 { 
+  position: absolute; /* faz o h1 ficar por cima */
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-text-stroke: 2px black; /* contorno preto para destacar o texto */
+  color: white;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
