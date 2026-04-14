@@ -6,22 +6,38 @@
     <meta name="description" content="Esse é meu primeiro site">
     <meta name="keywords" content="html, css, site">
     <meta name="author" content="byluxp">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Oi, princesa!</title>
 </head>
 <body>
     <div class="container">
        <!-- <img src="img/banner-sterne-himmel-panorama-1673296499uPz.png" alt="Imagem"> --->
-        <h1>Oi, meu amor!</h1>
-        <div class="content">
+        <header>
+            <h1>Oi, meu amor!</h1>
+        </header>
+        <main class="content">
             <h3>Fiz essa página especial, para te demonstrar meu amor.</h3>
-            <p class="resumo">Nesta seção você encontrará: <br>
-                &#x2764: <a href="pages/poemas.html">Poemas</a><br>
-                &#x2728: <a href="pages/amor.html">Mensagens positivas</a><br>
-                &#x1F60E: <a href="pages/puxoes.html">Puxões de orelha</a><br>
-                Mas você sempre será...</p>
-            <p><b>Minha princesa!</b></p>
+            <nav class="menu links">
+            <p class="resumo">Nesta seção você encontrará:</p>
+                <ul>
+                    <li>&#x2764: <a href="pages/poemas.html">Poemas</a></li>
+                    <li>&#x2728: <a href="pages/amor.html">Mensagens positivas</a></li>
+                    <li>&#x1F60E: <a href="pages/puxoes.html">Puxões de orelha</a></li>
+                </ul>
+            </nav>
+            <section class="interacoes">
+                <button id="btn-humor">Como você se sente hoje?</button>
+                <button id="btn-recado">Algo que queira me dizer?</button>
+                
+                <div id="caixa-texto" style="display: none; margin-top: 20px;">
+                    <textarea id="entrada-texto" placeholder="Escreva aqui..."></textarea>
+                    <button id="enviar-btn">Enviar</button>
+                </div>
+            </section>        
+            <p>Mas você sempre será... <b>Minha princesa!</b></p>
+        </main>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
